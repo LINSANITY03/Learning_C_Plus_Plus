@@ -2,11 +2,12 @@
 #include <cmath>
 
 double power(double, int); // declaration
+void print_pow(double, int);
 
 int main()
 {
 
-    int baseNumber;
+    double baseNumber;
     int powerNumber;
 
     std::cout << "Enter the baseNumber:";
@@ -14,9 +15,14 @@ int main()
     std::cout << "Enter the powerNumber:";
     std::cin >> powerNumber;
 
-    double myPower = power(baseNumber, powerNumber);
-    std::cout << myPower << std::endl;
+    print_pow(baseNumber, powerNumber);
     return 0;
+}
+
+void print_pow(double base, int expo)
+{
+    double myPower = power(base, expo);
+    std::cout << base << " raised to the " << expo << " power is " << myPower << std::endl;
 }
 
 // making our custom power function
