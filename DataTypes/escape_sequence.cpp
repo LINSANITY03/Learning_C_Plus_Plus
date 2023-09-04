@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
 
+// if we want to use a string data type we need to add string header
 int main()
 {
-    std::cout << "hello\"hehehe\"world"; // \t - enter a tab character
+    std::cout << "hello\tworld"; // \t - enter a tab character
     // \n - new line
     // \v - vertical tab
     // \0 - denotes the end of string
