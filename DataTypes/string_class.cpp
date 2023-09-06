@@ -12,8 +12,7 @@ int main()
     // P u j a n \0 => 6 elements
 
     std::string in_greeting;
-    std::cin >> in_greeting;
+    std::getline(std::cin, in_greeting); // getline for getting all input strings
     std::cout << in_greeting << std::endl;
-
     return 0;
 }
